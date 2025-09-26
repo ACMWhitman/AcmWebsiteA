@@ -1,5 +1,6 @@
 <script setup>
 import Headbar from './components/Headbar.vue'
+import './brand.css'
 </script>
 
 <template>

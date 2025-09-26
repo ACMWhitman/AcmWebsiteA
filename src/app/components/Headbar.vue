@@ -3,7 +3,7 @@ import HeadbarButton from './HeadbarButton.vue'
 </script>
 <template>
     <div class="headbar">
-        <HeadbarButton text="Home"></HeadbarButton>
+        <HeadbarButton text="Home" to="/"></HeadbarButton>
         <HeadbarButton text="About"></HeadbarButton>
         <HeadbarButton text="Blog"></HeadbarButton>
     </div>

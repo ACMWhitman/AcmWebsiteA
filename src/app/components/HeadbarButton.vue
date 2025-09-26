@@ -1,8 +1,9 @@
 <script setup>
-defineProps(['text'])
+let props = defineProps(['text','to'])
+let boi = props.to ?? ''
 </script>
 <template>
-    <div class="templatebutton">{{ text }}</div>
+    <a :href="boi"><div class="templatebutton">{{ text }}</div></a>
 </template>
 <style>
 .templatebutton{
@@ -11,5 +12,9 @@ defineProps(['text'])
 }
 .templatebutton:hover{
     background:rgba(0, 0, 0, 0.26);
+}
+a {
+    text-decoration: unset;
+    color: unset;
 }
 </style>
