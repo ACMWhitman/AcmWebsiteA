@@ -1,19 +1,24 @@
 <script setup>
-import Headbar from '../components/Headbar.vue';
-import { createRouter } from 'vue-router';
-
-createRouter({
-  routes:{
-    
-  }
-})
-
+import Headbar from './components/Headbar.vue'
 </script>
 
 <template>
   <div>
-    <NuxtRouteAnnouncer />
     <Headbar />
-    <RouterView/>
+    <NuxtRouteAnnouncer />
+    <NuxtPage />
   </div>
 </template>
+<style>
+
+body, html{
+  margin:0px;
+  padding:none;
+}
+
+
+html{
+  font-family: roboto;
+}
+
+</style>
